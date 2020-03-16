@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         loadMrectAd()
         loadInterstitial()
         showInterstitial()
-        WebView.setWebContentsDebuggingEnabled(true)
     }
 
     /**
@@ -79,7 +78,7 @@ class MainActivity : AppCompatActivity() {
         loadMrect.setOnClickListener {
             val adRequest = PublisherAdRequest.Builder().build()
             AppMonet.addBids(
-                publisherAdView, adRequest, 4000
+                publisherAdView, adRequest, 1500
             ) { publisherAdRequest ->
                 publisherAdView.loadAd(publisherAdRequest)
             }
@@ -91,7 +90,6 @@ class MainActivity : AppCompatActivity() {
      */
     private fun loadInterstitial() {
         loadInterstitial.setOnClickListener {
-            WebView.setWebContentsDebuggingEnabled(true)
             val adRequest = PublisherAdRequest.Builder().build()
             interstitial.loadAd(adRequest)
         }
