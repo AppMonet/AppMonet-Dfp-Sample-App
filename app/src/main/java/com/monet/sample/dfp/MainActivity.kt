@@ -58,15 +58,15 @@ class MainActivity : AppCompatActivity() {
     private fun setupAppMonetView() {
         publisherAdView.adListener = object : AdListener() {
             override fun onAdLoaded() {
-                showToast("Interstitial Loaded")
+                showToast("Banner Loaded")
             }
 
             override fun onAdFailedToLoad(errorCode: Int) {
-                showToast("Interstitial Failed")
+                showToast("Banner Failed")
             }
 
             override fun onAdClicked() {
-                showToast("Interstitial Clicked")
+                showToast("Banner Clicked")
             }
         }
     }
