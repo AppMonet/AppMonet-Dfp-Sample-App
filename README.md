@@ -1,4 +1,4 @@
-# AppMonet-Dfp-Sample-App
+# AppMonet GAM Sample App - Android
 
 This sample app demonstrates an integration of the AppMonet SDK with the Google Ad Manager (GAM/DFP) SDK
 
