@@ -10,8 +10,11 @@ class AppMonetApp : Application() {
         super.onCreate()
         //AppMonet initialization.
         val appMonetConfiguration = AppMonetConfiguration.Builder()
-            .applicationId(BuildConfig.APP_ID)
+            .applicationId("pjdfkud")
             .build()
         AppMonet.init(this, appMonetConfiguration)
+
+        //Use this only during testing in order to get test ads.
+        AppMonet.testMode()
     }
 }
